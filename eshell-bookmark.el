@@ -29,6 +29,7 @@
 
 ;;; Code:
 
+(require 'bookmark)
 (require 'eshell)
 
 (defun eshell-bookmark--make-record ()
