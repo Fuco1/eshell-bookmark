@@ -4,9 +4,9 @@
 
 ;; Author: Matúš Goljer <matus.goljer@gmail.com>
 ;; Maintainer: Matúš Goljer <matus.goljer@gmail.com>
-;; Version: 0.0.1
+;; Version: 1.0.0
 ;; Created:  6th September 2017
-;; Package-requires: ((dash "2.10.0"))
+;; Package-requires: ()
 ;; Keywords: convenience, files
 
 ;; This program is free software; you can redistribute it and/or
