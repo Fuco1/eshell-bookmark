@@ -29,9 +29,6 @@
 
 ;;; Code:
 
-(require 'bookmark)
-(require 'eshell)
-
 (defun eshell-bookmark--make-record ()
   "Create a eshell bookmark.
 
