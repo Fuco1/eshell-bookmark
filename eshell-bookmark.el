@@ -1,4 +1,4 @@
-;;; eshell-bookmark.el ---  -*- lexical-binding: t -*-
+;;; eshell-bookmark.el --- Integrate bookmarks with eshell.  -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2017 Matúš Goljer
 
@@ -6,8 +6,9 @@
 ;; Maintainer: Matúš Goljer <matus.goljer@gmail.com>
 ;; Version: 1.0.0
 ;; Created:  6th September 2017
-;; Package-requires: ()
+;; Package-requires: ((emacs "24.3"))
 ;; Keywords: convenience, files
+;; URL: https://github.com/Fuco1/eshell-bookmark
 
 ;; This program is free software; you can redistribute it and/or
 ;; modify it under the terms of the GNU General Public License
@@ -31,6 +32,9 @@
 ;; to your configuration.
 
 ;;; Code:
+
+(require 'bookmark)
+(require 'eshell)
 
 (defun eshell-bookmark--make-record ()
   "Create a eshell bookmark.
