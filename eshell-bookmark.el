@@ -4,7 +4,7 @@
 
 ;; Author: Matúš Goljer <matus.goljer@gmail.com>
 ;; Maintainer: Matúš Goljer <matus.goljer@gmail.com>
-;; Version: 1.0.0
+;; Version: 2.0.0
 ;; Created:  6th September 2017
 ;; Package-requires: ((emacs "24.3"))
 ;; Keywords: convenience, files
