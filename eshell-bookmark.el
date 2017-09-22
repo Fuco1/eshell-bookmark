@@ -25,7 +25,10 @@
 ;;; Commentary:
 
 ;; This package provides bookmark.el integration for eshell.  It is
-;; especially useful for quickly jumping to remote/TRAMP hosts
+;; especially useful for quickly jumping to remote/TRAMP hosts.
+
+;; To enable, add (add-hook 'eshell-mode-hook 'eshell-bookmark-setup)
+;; to your configuration.
 
 ;;; Code:
 
@@ -47,12 +50,10 @@ to the location when the bookmark was created."
     (setq default-directory (cdr (assq 'filename bookmark)))
     (eshell-reset)))
 
+;;;###autoload
 (defun eshell-bookmark-setup ()
   "Setup eshell-bookmark."
   (setq-local bookmark-make-record-function 'eshell-bookmark--make-record))
-
-;;;###autoload
-(add-hook 'eshell-mode-hook 'eshell-bookmark-setup)
 
 (provide 'eshell-bookmark)
 ;;; eshell-bookmark.el ends here
