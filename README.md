@@ -2,6 +2,8 @@
 
 Simple package integrating eshell with bookmark.el.
 
+Read the [blog post](https://fuco1.github.io/2017-10-08-Using-bookmarks-with-eshell-and-docker-tramp.html) for introduction.
+
 # Installation
 
 Get it from MELPA or MELPA Stable with `M-x package-install eshell-bookmark`.
