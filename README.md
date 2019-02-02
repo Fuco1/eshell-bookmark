@@ -20,8 +20,9 @@ If you use `use-package`, the setup can look something like the following:
 
 ``` emacs-lisp
 (use-package eshell-bookmark
+  :after eshell
   :config
-  (add-hook 'eshell-mode-hook 'eshell-bookmark-setup))
+  (add-hook 'eshell-mode-hook #'eshell-bookmark-setup))
 ```
 
 After this, use the bookmark features as usual:
